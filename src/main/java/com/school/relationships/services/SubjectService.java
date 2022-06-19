@@ -29,7 +29,7 @@ public class SubjectService {
             subject.setSubjectname(model.getSubjectName());
            return subjectRepository.save(subject).getIdsubject();
         } catch (Exception e) {
-            log.error("Error creating subject > {}", e);
+            log.error("Error creating subject > ", e);
             throw e;
         }
     }
